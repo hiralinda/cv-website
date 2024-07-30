@@ -1,0 +1,23 @@
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  @keyframes draw {
+    0%, 100% { stroke-dashoffset: 1000; }
+    50% { stroke-dashoffset: 0; }
+  }
+  
+  .animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .animate-draw-loop {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 8s linear infinite;
+  }
+  
+  .glow {
+    filter: drop-shadow(0 0 2px currentColor);
+  }
