@@ -83,76 +83,92 @@ const Hero = () => {
                 strokeLinejoin="round">
                 {/* Body */}
                 <path
-                  d="M100 50 L60 180 L140 180 Z"
+                  d="M50 100 C50 50, 150 50, 150 100 S50 150, 50 100 Z"
                   className="animate-draw-loop glow"
+                  fill="brown"
+                />
+
+                {/* Head */}
+                <circle
+                  cx="100"
+                  cy="70"
+                  r="30"
+                  className="animate-draw-loop glow"
+                  fill="brown"
                 />
 
                 {/* Eyes */}
                 <g>
                   <circle
                     ref={leftEyeRef}
-                    cx="80"
-                    cy="90"
-                    r="20"
+                    cx="85"
+                    cy="65"
+                    r="5"
                     className="animate-draw-loop glow"
                     fill="white"
                   />
                   <circle
                     ref={leftPupilRef}
-                    cx="80"
-                    cy="90"
-                    r="5"
+                    cx="85"
+                    cy="65"
+                    r="2"
                     className="animate-pulse glow"
-                    fill="currentColor"
+                    fill="black"
                   />
                 </g>
                 <g>
                   <circle
                     ref={rightEyeRef}
-                    cx="120"
-                    cy="90"
-                    r="20"
+                    cx="115"
+                    cy="65"
+                    r="5"
                     className="animate-draw-loop glow"
                     fill="white"
                   />
                   <circle
                     ref={rightPupilRef}
-                    cx="120"
-                    cy="90"
-                    r="5"
+                    cx="115"
+                    cy="65"
+                    r="2"
                     className="animate-pulse glow"
-                    fill="currentColor"
+                    fill="black"
                   />
                 </g>
 
-                {/* Beak */}
+                {/* Nose */}
+                <circle
+                  cx="100"
+                  cy="80"
+                  r="3"
+                  className="animate-draw-loop glow"
+                  fill="black"
+                />
+
+                {/* Legs */}
+                <path d="M70 150 L70 180" className="animate-draw-loop glow" />
+                <path d="M90 150 L90 180" className="animate-draw-loop glow" />
                 <path
-                  d="M95 110 L100 120 L105 110"
+                  d="M110 150 L110 180"
+                  className="animate-draw-loop glow"
+                />
+                <path
+                  d="M130 150 L130 180"
                   className="animate-draw-loop glow"
                 />
 
-                {/* Wings */}
+                {/* Tail */}
                 <path
-                  d="M60 100 L20 150 L60 180"
-                  className="animate-draw-loop glow"
-                />
-                <path
-                  d="M140 100 L180 150 L140 180"
+                  d="M150 100 Q160 110, 150 120"
                   className="animate-draw-loop glow"
                 />
 
-                {/* Geometric patterns */}
-                <path d="M70 130 L130 130" className="animate-draw-loop glow" />
-                <path d="M65 150 L135 150" className="animate-draw-loop glow" />
-                <path d="M60 170 L140 170" className="animate-draw-loop glow" />
-
-                {/* Ears / Horn-like feathers */}
-                <path d="M85 50 L70 20" className="animate-draw-loop glow" />
-                <path d="M115 50 L130 20" className="animate-draw-loop glow" />
-
-                {/* Branch */}
+                {/* Ears */}
                 <path
-                  d="M0 190 C50 180 150 180 200 190"
+                  d="M85 40 Q80 30, 90 30"
+                  className="animate-draw-loop glow"
+                />
+                <path
+                  d="M115 40 Q110 30, 120 30"
                   className="animate-draw-loop glow"
                 />
               </svg>

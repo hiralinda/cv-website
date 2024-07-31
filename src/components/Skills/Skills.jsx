@@ -22,14 +22,13 @@ const Skills = () => {
     { icon: faPython, name: "Python" },
     { icon: faGitAlt, name: "Git" },
     { icon: faGithub, name: "GitHub" },
-    { icon: faDocker, name: "Docker" },
   ];
 
   return (
     <div className="bg-gray-900 text-white py-16">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold mb-12">My Skills</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
           {skills.map((skill, index) => (
             <div key={index} className="flex flex-col items-center">
               <FontAwesomeIcon
