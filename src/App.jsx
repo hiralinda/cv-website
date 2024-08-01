@@ -4,17 +4,27 @@ import Hero from "./components/Hero/Hero";
 import Skills from "./components/Skills/Skills";
 import Certificates from "./components/Certificates/Certificates";
 import Projects from "./components/Projects/Projects";
+import MoreProjects from "./MoreProjects";
+import { Route, Routes, Router } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Navbar />
-      <div>
-        <Hero />
-        <Skills />
-        <Certificates />
-        <Projects />
-      </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Skills />
+              <Certificates />
+              <Projects />
+            </>
+          }
+        />
+        <Route path="/projects" element={<MoreProjects />} />
+      </Routes>
     </>
   );
 }

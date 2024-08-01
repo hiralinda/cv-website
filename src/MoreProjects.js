@@ -1,7 +1,17 @@
 import React from "react";
-import "./Projects.css";
-import { Link } from "react-router-dom";
-const projects = [
+
+const moreProjects = [
+  {
+    title: "Blog Platform",
+    description:
+      "A blog platform with user authentication and CRUD operations.",
+    sourceCode: "https://github.com/yourusername/blog-platform",
+    liveSite: "https://yourblogplatform.com",
+    course: "Web Development Bootcamp",
+    comments: "Learned about user authentication and advanced routing.",
+    image: "https://via.placeholder.com/300",
+    tags: ["React", "Node.js", "Express", "MongoDB", "JWT"],
+  },
   {
     title: "Portfolio Website",
     description:
@@ -68,16 +78,16 @@ const projects = [
   },
 ];
 
-const Projects = () => {
+const MoreProjects = () => {
   return (
     <div className="bg-gray-900 text-white py-16">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold mb-12">My Projects</h2>
+        <h2 className="text-4xl font-bold mb-12">All Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {moreProjects.map((project, index) => (
             <div
               key={index}
-              className="relative bg-gray-800 p-6 rounded-lg shadow-lg transition-transform transform glow-on-hover">
+              className="relative bg-gray-800 p-6 rounded-lg shadow-lg glow-on-hover">
               <img
                 src={project.image}
                 alt={project.title}
@@ -113,17 +123,13 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
+              <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity"></div>
             </div>
           ))}
-          <Link to="/projects">
-            <button className="mt-12 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
-              View More
-            </button>
-          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default Projects;
+export default MoreProjects;
