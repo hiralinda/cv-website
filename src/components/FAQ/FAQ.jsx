@@ -38,7 +38,7 @@ const FAQ = () => {
   return (
     <div className="bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 text-white py-20">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-5xl font-extrabold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+        <h2 className="text-5xl font-extrabold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-600">
           Frequently Asked Questions
         </h2>
         <div className="space-y-6">
@@ -52,7 +52,7 @@ const FAQ = () => {
               <button
                 className="w-full text-left focus:outline-none group"
                 onClick={() => handleToggle(index)}>
-                <h3 className="text-2xl font-semibold flex justify-between items-center text-gray-100 group-hover:text-purple-400 transition-colors duration-300">
+                <h4 className="text-xl font-semibold flex justify-between items-center text-gray-100 group-hover:text-purple-400 transition-colors duration-300">
                   {faq.question}
                   <motion.span
                     animate={{ rotate: expandedIndex === index ? 45 : 0 }}
@@ -60,7 +60,7 @@ const FAQ = () => {
                     className="text-purple-400 text-3xl">
                     +
                   </motion.span>
-                </h3>
+                </h4>
               </button>
               <AnimatePresence>
                 {expandedIndex === index && (

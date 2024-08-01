@@ -12,17 +12,17 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           <motion.a
             href="/"
-            className="text-white text-lg"
+            className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 text-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}>
-            Ligia's Homepage
+            Hire Ligia
           </motion.a>
           <div className="hidden md:flex space-x-8">
             {navItems.map((item, index) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="text-gray-300 hover:text-white transition duration-300"
+                className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600 hover:text-white transition duration-300"
                 whileHover={{ scale: 1.1, color: "#fff" }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: -20 }}
