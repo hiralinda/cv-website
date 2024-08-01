@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const moreProjects = [
   {
@@ -80,14 +81,28 @@ const moreProjects = [
 
 const MoreProjects = () => {
   return (
-    <div className="bg-gray-900 text-white py-16">
-      <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold mb-12">All Projects</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.h2
+          initial={{ y: -50 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-5xl font-extrabold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+          All Projects
+        </motion.h2>
+        <motion.div
+          initial={{ y: 50 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {moreProjects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
-              className="relative bg-gray-800 p-6 rounded-lg shadow-lg glow-on-hover">
+              className="bg-gray-800 p-6 rounded-lg shadow-lg glow-on-hover">
               <img
                 src={project.image}
                 alt={project.title}
@@ -123,12 +138,11 @@ const MoreProjects = () => {
                   </span>
                 ))}
               </div>
-              <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity"></div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

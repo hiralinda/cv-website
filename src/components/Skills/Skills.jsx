@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
@@ -14,33 +15,64 @@ import {
 
 const Skills = () => {
   const skills = [
-    { icon: faReact, name: "React" },
-    { icon: faNodeJs, name: "Node.js" },
-    { icon: faHtml5, name: "HTML5" },
-    { icon: faCss3Alt, name: "CSS3" },
-    { icon: faJsSquare, name: "JavaScript" },
-    { icon: faPython, name: "Python" },
-    { icon: faGitAlt, name: "Git" },
-    { icon: faGithub, name: "GitHub" },
+    { icon: faReact, name: "React", color: "#61DAFB" },
+    { icon: faNodeJs, name: "Node.js", color: "#339933" },
+    { icon: faHtml5, name: "HTML5", color: "#E34F26" },
+    { icon: faCss3Alt, name: "CSS3", color: "#1572B6" },
+    { icon: faJsSquare, name: "JavaScript", color: "#F7DF1E" },
+    { icon: faPython, name: "Python", color: "#3776AB" },
+    { icon: faGitAlt, name: "Git", color: "#F05032" },
+    { icon: faGithub, name: "GitHub", color: "#181717" },
+    { icon: faDocker, name: "Docker", color: "#2496ED" },
   ];
 
   return (
-    <div className="bg-gray-900 text-white py-16">
-      <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold mb-12">My Skills</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.h2
+          initial={{ y: -50 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-5xl font-extrabold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+          My Skills
+        </motion.h2>
+        <motion.div
+          initial={{ y: 50 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10">
           {skills.map((skill, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <FontAwesomeIcon
-                icon={skill.icon}
-                className="text-6xl mb-4 hover:text-blue-500 transition duration-300"
-              />
-              <p className="text-xl">{skill.name}</p>
-            </div>
+            <motion.div
+              key={index}
+              whileHover={{ scale: 1.1, y: -10 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex flex-col items-center">
+              <motion.div
+                whileHover={{ rotate: 360 }}
+                transition={{ duration: 0.5 }}
+                className="w-24 h-24 flex items-center justify-center bg-gray-800 rounded-full shadow-lg mb-4">
+                <FontAwesomeIcon
+                  icon={skill.icon}
+                  className="text-5xl"
+                  style={{ color: skill.color }}
+                />
+              </motion.div>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                className="text-xl font-semibold">
+                {skill.name}
+              </motion.p>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

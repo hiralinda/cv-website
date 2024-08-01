@@ -5,6 +5,7 @@ import Skills from "./components/Skills/Skills";
 import Certificates from "./components/Certificates/Certificates";
 import Projects from "./components/Projects/Projects";
 import MoreProjects from "./MoreProjects";
+import FAQ from "./components/FAQ/FAQ";
 import { Route, Routes, Router } from "react-router-dom";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
               <Skills />
               <Certificates />
               <Projects />
+              <FAQ />
             </>
           }
         />
