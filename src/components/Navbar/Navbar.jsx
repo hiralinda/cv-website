@@ -1,22 +1,21 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = ["Home", "About", "Projects", "Skills", "Contact"];
+  const navItems = ["Skills", "Certificates", "Projects", "FAQ", "Contact"];
 
   return (
     <nav className="bg-gradient-to-r from-gray-900 to-gray-800 shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <motion.a
-            href="#"
-            className="text-white text-3xl font-extrabold"
+            href="/"
+            className="text-white text-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}>
-            Portfolio
+            Ligia's Homepage
           </motion.a>
           <div className="hidden md:flex space-x-8">
             {navItems.map((item, index) => (

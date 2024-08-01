@@ -6,6 +6,7 @@ import Certificates from "./components/Certificates/Certificates";
 import Projects from "./components/Projects/Projects";
 import MoreProjects from "./MoreProjects";
 import FAQ from "./components/FAQ/FAQ";
+import Contact from "./components/Contact/Contact";
 import { Route, Routes, Router } from "react-router-dom";
 
 function App() {
@@ -18,10 +19,21 @@ function App() {
           element={
             <>
               <Hero />
-              <Skills />
-              <Certificates />
-              <Projects />
-              <FAQ />
+              <section id="skills">
+                <Skills />
+              </section>
+              <section id="certificates">
+                <Certificates />
+              </section>
+              <section id="projects">
+                <Projects />
+              </section>
+              <section id="faq">
+                <FAQ />
+              </section>
+              <section id="contact">
+                <Contact />
+              </section>
             </>
           }
         />

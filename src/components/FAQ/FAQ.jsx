@@ -14,6 +14,18 @@ const faqs = [
     question: "Can you work remotely?",
     answer: "Yes, I am open to remote work opportunities.",
   },
+  {
+    question: "What is your availability for work?",
+    answer: "I am available for full-time positions starting immediately.",
+  },
+  {
+    question: "What technologies do you specialize in?",
+    answer: "I specialize in React, Node.js, Express, and MongoDB.",
+  },
+  {
+    question: "Can you work remotely?",
+    answer: "Yes, I am open to remote work opportunities.",
+  },
 ];
 
 const FAQ = () => {
@@ -24,7 +36,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
+    <div className="bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 text-white py-20">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-5xl font-extrabold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
           Frequently Asked Questions

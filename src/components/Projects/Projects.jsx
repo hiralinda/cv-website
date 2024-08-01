@@ -43,7 +43,7 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-24">
+      className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           initial={{ y: -50 }}
