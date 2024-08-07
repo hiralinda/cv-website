@@ -44,7 +44,7 @@ const Hero = () => {
               transition={{ delay: 0.6, duration: 0.5 }}
               className="flex justify-center md:justify-start space-x-6">
               <motion.a
-                href="https://github.com/"
+                href="https://github.com/hiralinda"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
@@ -53,7 +53,7 @@ const Hero = () => {
                 <FaGithub />
               </motion.a>
               <motion.a
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/in/ligiahirata/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
@@ -62,7 +62,7 @@ const Hero = () => {
                 <FaLinkedin />
               </motion.a>
               <motion.a
-                href="mailto:"
+                href="mailto:ligiahirata@proton.me"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="text-2xl text-gray-300 hover:text-white transition-colors duration-300">

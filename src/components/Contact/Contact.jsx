@@ -10,40 +10,40 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const socialLinks = [
   {
     platform: "LinkedIn",
-    url: "https://www.linkedin.com/in/yourprofile",
+    url: "https://www.linkedin.com/in/ligiahirata/",
     icon: faLinkedin,
     isCustomIcon: false,
   },
   {
     platform: "GitHub",
-    url: "https://github.com/yourusername",
+    url: "https://github.com/hiralinda",
     icon: faGithub,
     isCustomIcon: false,
   },
   {
     platform: "Frontend Mentor",
-    url: "https://www.frontendmentor.io/profile/yourusername",
+    url: "https://www.frontendmentor.io/profile/hiralinda",
     icon: "https://seeklogo.com/images/F/frontend-mentor-logo-DD85EFE0E9-seeklogo.com.png",
     isCustomIcon: true,
   },
   {
     platform: "FreeCodeCamp",
-    url: "https://www.freecodecamp.org/yourusername",
+    url: "https://www.freecodecamp.org/hiralinda",
     icon: faFreeCodeCamp,
     isCustomIcon: false,
   },
-  {
-    platform: "The Project Odin",
-    url: "https://www.theprojectodin.com/",
-    icon: "https://odin-signupform-sv.netlify.app/assets/images/odin.png",
-    isCustomIcon: true,
-  },
-  {
-    platform: "LeetCode",
-    url: "https://www.leetcode.com/",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png",
-    isCustomIcon: true,
-  },
+  // {
+  //   platform: "The Project Odin",
+  //   url: "https://www.theodinproject.com/dashboard",
+  //   icon: "https://odin-signupform-sv.netlify.app/assets/images/odin.png",
+  //   isCustomIcon: true,
+  // },
+  // {
+  //   platform: "LeetCode",
+  //   url: "https://leetcode.com/u/hiralinda/",
+  //   icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png",
+  //   isCustomIcon: true,
+  // },
 ];
 
 const Contact = () => {
@@ -80,11 +80,7 @@ const Contact = () => {
                   className="w-8 h-8 object-contain"
                 />
               ) : (
-                <FontAwesomeIcon
-                  icon={link.icon}
-                  size="2x"
-                  className="text-blue-400"
-                />
+                <FontAwesomeIcon icon={link.icon} size="2x" />
               )}
               <span className="text-lg font-semibold">{link.platform}</span>
             </motion.a>
@@ -95,10 +91,8 @@ const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}>
-          <p className="font-light">Get in touch via email:</p>
-          <p className="font-semibold mt-2 text-blue-400">
-            your.email@example.com
-          </p>
+          <p className="font-light text-blue-400">Get in touch via email:</p>
+          <p className="font-semibold mt-2 text-white">ligiahirata@proton.me</p>
         </motion.div>
       </div>
     </div>

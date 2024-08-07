@@ -39,24 +39,24 @@ const Footer = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}>
             <motion.a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/ligiahirata/"
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.1, color: "#0077B5" }}
+              whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}>
               <FaLinkedin size={24} />
             </motion.a>
             <motion.a
-              href="https://github.com/yourusername"
+              href="https://github.com/hiralinda"
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.1, color: "#6e5494" }}
+              whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}>
               <FaGithub size={24} />
             </motion.a>
             <motion.a
-              href="mailto:your.email@example.com"
-              whileHover={{ scale: 1.1, color: "#D44638" }}
+              href="mailto:ligiahirata@proton.me"
+              whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}>
               <FaEnvelope size={24} />
             </motion.a>
