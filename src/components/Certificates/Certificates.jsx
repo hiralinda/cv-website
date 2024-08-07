@@ -81,7 +81,7 @@ const Certificates = () => {
                   className="text-5xl text-blue-400"
                 />
               </motion.div>
-              <h3 className="text-2xl font-bold mb-3 group-hover:text-blue-400 transition-colors duration-300">
+              <h3 className="text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">
                 {cert.title}
               </h3>
               <p className="text-lg mb-2 text-gray-300">{cert.organization}</p>
