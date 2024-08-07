@@ -1,24 +1,46 @@
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
-// import CanvasLoader from "./Loader";
+import React, { useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { OrbitControls, useGLTF } from "@react-three/drei";
+import "./Three.css";
 
 const Earth = () => {
-  const earth = useGLTF("./planet/scene.gltf");
+  const earth = useGLTF("./suzanne/textrubiks.glb");
+  const meshRef = useRef();
+
+  useFrame((state, delta) => {
+    if (meshRef.current) {
+      meshRef.current.rotation.x += 0.002;
+    }
+  });
 
   return (
-    <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
+    <primitive
+      ref={meshRef}
+      object={earth.scene}
+      scale={0.7}
+      position-x={0.5}
+      rotation-x={0.5}
+      position-y={0.5}
+      rotation-y={5.5}
+      position-z={-1.5}
+    />
   );
 };
 
 const EarthCanvas = () => {
   return (
     <Canvas>
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[10, 10, 5]} intensity={1} />
+      <ambientLight intensity={2} />
+      <directionalLight position={[10, 10, 10]} intensity={1} />
       <Earth />
-      <OrbitControls />
+      <OrbitControls
+        enableZoom={false}
+        enablePan={true}
+        enableRotate={true}
+        target={[0.5, 0.5, -1.5]}
+        minPolarAngle={0}
+        maxPolarAngle={Math.PI}
+      />
     </Canvas>
   );
 };

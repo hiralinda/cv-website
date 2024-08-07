@@ -5,58 +5,15 @@ import ThreeDModel from "../Three/Three";
 import "./Hero.css";
 
 const Hero = () => {
-  const leftEyeRef = useRef(null);
-  const rightEyeRef = useRef(null);
-  const leftPupilRef = useRef(null);
-  const rightPupilRef = useRef(null);
-
-  useEffect(() => {
-    const handleMouseMove = (event) => {
-      const eyes = [
-        { eye: leftEyeRef.current, pupil: leftPupilRef.current },
-        { eye: rightEyeRef.current, pupil: rightPupilRef.current },
-      ];
-
-      eyes.forEach(({ eye, pupil }) => {
-        if (eye && pupil) {
-          const eyeRect = eye.getBoundingClientRect();
-          const eyeCenterX = eyeRect.left + eyeRect.width / 2;
-          const eyeCenterY = eyeRect.top + eyeRect.height / 2;
-
-          const angle = Math.atan2(
-            event.clientY - eyeCenterY,
-            event.clientX - eyeCenterX
-          );
-          const distance = Math.min(
-            eyeRect.width / 4,
-            Math.hypot(event.clientX - eyeCenterX, event.clientY - eyeCenterY) /
-              2
-          );
-
-          const pupilX = Math.cos(angle) * distance;
-          const pupilY = Math.sin(angle) * distance;
-
-          pupil.style.transform = `translate(${pupilX}px, ${pupilY}px)`;
-        }
-      });
-    };
-
-    document.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-
   return (
-    <div className="bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 text-white">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
+    <div className="bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 text-white relative overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="max-w-6xl mx-auto px-4 py-32 flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+          className="py-32 md:py-32 flex flex-col md:flex-row items-center">
+          <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
             <motion.h1
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -103,8 +60,8 @@ const Hero = () => {
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="md:w-1/2 flex justify-center items-center">
-            <div className="w-full h-96 md:h-128">
+            className="hidden md:block md:w-1/2 absolute right-0 top-0 bottom-0">
+            <div className="w-full h-full">
               <ThreeDModel />
             </div>
           </motion.div>
@@ -113,5 +70,4 @@ const Hero = () => {
     </div>
   );
 };
-
 export default Hero;
