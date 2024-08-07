@@ -3,28 +3,39 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
+    question: "Where are you located?",
+    answer: "I am located in Germany and would need a visa sponsorship.",
+  },
+  {
+    question: "What is your favorite book?",
+    answer:
+      "I will tell recruters that it is Clean Code by Robert C. Martin but it is actually Harry Potter and the Deathly Hallows by J.K. Rowling.",
+  },
+  {
+    question: "How long does it take you to solve the 3x3 Rubik's Cube?",
+    answer:
+      "I still take about 2 minutes since I use the lawer by lawer technique.",
+  },
+  {
     question: "What is your availability for work?",
     answer: "I am available for full-time positions starting immediately.",
   },
   {
-    question: "What technologies do you specialize in?",
-    answer: "I specialize in React, Node.js, Express, and MongoDB.",
-  },
-  {
-    question: "Can you work remotely?",
-    answer: "Yes, I am open to remote work opportunities.",
-  },
-  {
-    question: "What is your availability for work?",
-    answer: "I am available for full-time positions starting immediately.",
-  },
-  {
-    question: "What technologies do you specialize in?",
-    answer: "I specialize in React, Node.js, Express, and MongoDB.",
-  },
-  {
-    question: "Can you work remotely?",
-    answer: "Yes, I am open to remote work opportunities.",
+    question:
+      "Did you really make the Rubik's Cube that is displayed on the Hero section?",
+    answer: (
+      <>
+        Yes, I did using Blender Software and following{" "}
+        <a
+          href="https://www.youtube.com/watch?v=KIuH7zxHfPQ"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:underline">
+          this tutorial
+        </a>{" "}
+        on YouTube.
+      </>
+    ),
   },
 ];
 
