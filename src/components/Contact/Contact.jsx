@@ -53,7 +53,7 @@ const Contact = () => {
     <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-24">
       <div className="max-w-4xl mx-auto px-4">
         <motion.h2
-          className="text-6xl font-extrabold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600"
+          className="text-5xl font-extrabold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}>

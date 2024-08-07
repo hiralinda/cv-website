@@ -37,7 +37,7 @@ const FAQ = () => {
 
   return (
     <div className="bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 text-white py-20">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-5xl font-extrabold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-600">
           Frequently Asked Questions
         </h2>
