@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import ThreeDModel from "../Three/Three";
 import "./Hero.css";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaFileDownload,
+} from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -20,8 +26,8 @@ const Hero = () => {
               transition={{ delay: 0.2, duration: 0.5 }}
               className="text-4xl md:text-5xl font-bold leading-tight mb-6">
               Hi, I'm{" "}
-              <span className="bg-color:#ffffff text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-                Ligia Hirata,
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                Ligia Hirata
               </span>
             </motion.h1>
             <motion.p
@@ -29,31 +35,55 @@ const Hero = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
               className="text-lg md:text-xl mb-6">
-              a Biochemical Engineer that got into Web Developing: Seeking a Web
-              Development role to leverage my strong analytical and
-              problem-solving skills in building robust and user-friendly
-              applications.
+              Biochemical Engineering graduate turned Web Developer. Combining
+              analytical skills with coding expertise to create robust,
+              user-friendly applications.
             </motion.p>
             <motion.div
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.5 }}
-              className="flex justify-center md:justify-start space-x-4">
+              className="flex justify-center md:justify-start space-x-6">
               <motion.a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="text-2xl text-gray-300 hover:text-white transition-colors duration-300">
+                <FaGithub />
+              </motion.a>
+              <motion.a
+                href="https://linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="text-2xl text-gray-300 hover:text-white transition-colors duration-300">
+                <FaLinkedin />
+              </motion.a>
+              <motion.a
+                href="mailto:"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="text-2xl text-gray-300 hover:text-white transition-colors duration-300">
+                <FaEnvelope />
+              </motion.a>
+            </motion.div>
+            <motion.div
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.8, duration: 0.5 }}
+              className="mt-6">
+              <motion.a
+                href="/path-to-your-cv.pdf"
+                download
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="#contact"
-                className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-md font-bold rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg">
-                Get in Touch
+                className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-sm font-medium rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg">
+                <FaFileDownload className="mr-2" />
+                Download CV
               </motion.a>
-              <Link to="/projects">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-500 text-white text-md font-bold rounded-full hover:from-purple-700 hover:to-blue-600 transition-all duration-300 shadow-lg">
-                  View Projects
-                </motion.button>
-              </Link>
             </motion.div>
           </div>
           <motion.div
