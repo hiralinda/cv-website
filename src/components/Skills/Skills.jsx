@@ -10,7 +10,6 @@ import {
   faPython,
   faGitAlt,
   faGithub,
-  faDocker,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   SiDjango,

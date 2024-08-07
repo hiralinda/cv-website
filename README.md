@@ -72,7 +72,7 @@ The project uses Tailwind CSS for styling, providing a modern and clean design:
 6. MoreProjects: Additional projects displayed when "View More" is clicked.
 7. Contact: Section with social media links and contact information, using Framer Motion for animations.
 8. FAQ: Accordion-style question and answer section.
-9. 9. ThreeScene: Component for rendering the 3D object created with Blender using Three.js.
+9. ThreeScene: Component for rendering the 3D object created with Blender using Three.js.
 
 ## 3D Object Implementation
 - Created a custom 3D model using Blender

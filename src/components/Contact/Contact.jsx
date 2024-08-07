@@ -4,8 +4,6 @@ import {
   faLinkedin,
   faGithub,
   faFreeCodeCamp,
-  faCodepen,
-  faProjectOdin,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
