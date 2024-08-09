@@ -1,15 +1,24 @@
 {
   "files": {
     "main.css": "/hireligia/static/css/main.384ce04e.css",
-    "main.js": "/hireligia/static/js/main.edd54e1c.js",
+    "main.js": "/hireligia/static/js/main.c54fee33.js",
     "static/js/453.02cdc612.chunk.js": "/hireligia/static/js/453.02cdc612.chunk.js",
+    "static/media/img3.png": "/hireligia/static/media/img3.ccefba22dff36a952da3.png",
+    "static/media/img8.png": "/hireligia/static/media/img8.db878f8890c84ef7e3ca.png",
+    "static/media/img0.png": "/hireligia/static/media/img0.9f6c5eba3af557429aea.png",
+    "static/media/img2.png": "/hireligia/static/media/img2.80fea9214be895e96352.png",
+    "static/media/img6.png": "/hireligia/static/media/img6.01ac1af50da9d03c977f.png",
+    "static/media/img5.png": "/hireligia/static/media/img5.c795a7852be7836c6527.png",
+    "static/media/img4.png": "/hireligia/static/media/img4.40ddddc4462d1aa1e62e.png",
+    "static/media/img1.png": "/hireligia/static/media/img1.e2f0126e30304aa545c9.png",
+    "static/media/img7.png": "/hireligia/static/media/img7.6e1d170c9f5d3dc537c5.png",
     "index.html": "/hireligia/index.html",
     "main.384ce04e.css.map": "/hireligia/static/css/main.384ce04e.css.map",
-    "main.edd54e1c.js.map": "/hireligia/static/js/main.edd54e1c.js.map",
+    "main.c54fee33.js.map": "/hireligia/static/js/main.c54fee33.js.map",
     "453.02cdc612.chunk.js.map": "/hireligia/static/js/453.02cdc612.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.384ce04e.css",
-    "static/js/main.edd54e1c.js"
+    "static/js/main.c54fee33.js"
   ]
 }
