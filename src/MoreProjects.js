@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const moreProjects = [
   {
@@ -30,7 +31,7 @@ const moreProjects = [
   {
     title: "Eras Tour Acoustic Set",
     description:
-      "An application that displays every song Taylor has performed on the Acoustic Set on Eras Tour as a sortable table.",
+      "An application that displays every song Taylor Swift has performed on the Acoustic Set on Eras Tour as a sortable table.",
     sourceCode: "https://github.com/hiralinda/eras-tour-acoustic-set",
     liveSite: "https://eras-tour-acoustic-set.vercel.app/",
     course: "Personal Project",
@@ -116,6 +117,11 @@ const MoreProjects = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1);
+  };
 
   return (
     <motion.div
@@ -182,6 +188,15 @@ const MoreProjects = () => {
             </motion.div>
           ))}
         </motion.div>
+        <div className="text-center py-12">
+          <motion.button
+            onClick={handleGoBack}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="mb-10 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-lg font-bold rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg">
+            Go Back
+          </motion.button>
+        </div>
       </div>
     </motion.div>
   );

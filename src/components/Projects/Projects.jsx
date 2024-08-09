@@ -31,7 +31,7 @@ const projects = [
   {
     title: "Eras Tour Acoustic Set",
     description:
-      "An application that displays every song Taylor has performed on the Acoustic Set on Eras Tour as a sortable table.",
+      "An application that displays every song Taylor Swift has performed on the Acoustic Set on Eras Tour as a sortable table.",
     sourceCode: "https://github.com/hiralinda/eras-tour-acoustic-set",
     liveSite: "https://eras-tour-acoustic-set.vercel.app/",
     course: "Personal Project",

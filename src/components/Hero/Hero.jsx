@@ -75,13 +75,13 @@ const Hero = () => {
               transition={{ delay: 0.8, duration: 0.5 }}
               className="mt-6">
               <motion.a
-                href="/path-to-your-cv.pdf"
-                download
+                href="/files/ligiahirata_cv.pdf" // Ensure this path is correct
+                target="_blank" // Opens the PDF in a new tab
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-sm font-medium rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg">
                 <FaFileDownload className="mr-2" />
-                Download CV
+                View CV
               </motion.a>
             </motion.div>
           </div>

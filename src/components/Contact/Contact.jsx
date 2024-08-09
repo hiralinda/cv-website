@@ -91,7 +91,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}>
-          <p className="font-light text-blue-400">Get in touch via email:</p>
+          <p className="font-light text-blue-400">or email me:</p>
           <p className="font-semibold mt-2 text-white">ligiahirata@proton.me</p>
         </motion.div>
       </div>
