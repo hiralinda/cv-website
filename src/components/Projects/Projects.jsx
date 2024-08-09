@@ -4,36 +4,41 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "Personal Portifolio Website",
     description:
-      "A personal portfolio website to showcase my skills and projects.",
-    sourceCode: "https://github.com/yourusername/portfolio-website",
-    liveSite: "https://yourportfolio.com",
+      "A space I created to show my previous projects and use it to apply for jobs.",
+    sourceCode: "https://github.com/hiralinda/cv-website",
+    liveSite: "", //update
     course: "Personal Project",
-    comments: "This was a great way to learn Tailwind CSS and React!",
-    image: "https://via.placeholder.com/300",
-    tags: ["React", "Tailwind CSS", "JavaScript"],
-  },
-  {
-    title: "E-commerce Store",
-    description: "An online store built with React and Node.js.",
-    sourceCode: "https://github.com/yourusername/ecommerce-store",
-    liveSite: "https://yourecommerce.com",
-    course: "Full-Stack Development Course",
-    comments: "I learned a lot about state management and API integration.",
-    image: "https://via.placeholder.com/300",
-    tags: ["React", "Node.js", "Express", "MongoDB"],
-  },
-  {
-    title: "Chat Application",
-    description: "A real-time chat application using WebSocket.",
-    sourceCode: "https://github.com/yourusername/chat-app",
-    liveSite: "https://yourchatapp.com",
-    course: "Advanced JavaScript Course",
     comments:
-      "This project helped me understand WebSocket and real-time communication.",
-    image: "https://via.placeholder.com/300",
-    tags: ["WebSocket", "JavaScript", "Node.js"],
+      "It was my first time digging into Blender and 3D objects displayed on webpages",
+    image: "../img/img0.png",
+    tags: ["React", "Tailwind CSS", "Three.js", "Blender"],
+  },
+  {
+    title: "Teacher-Student Django Platform",
+    description:
+      "A Web application designed to facilitate the interaction between teachers and students.",
+    sourceCode:
+      "https://github.com/hiralinda/djangoproject_schoolwebpage?tab=readme-ov-file#teacher-student-django-platform",
+    liveSite: "https://youtu.be/Qk2ap_J89tg",
+    course: "CS50's Web Programming with Python and JavaScript Final Project",
+    comments:
+      "To challenge myself, I implemented Goggle Calendar API to generate Google Meets Link according to the scheduled class information on the platform.",
+    image: "../img/img8.png",
+    tags: ["Google API", "Django", "Tailwind CSS", "SQLite3", "SASS"],
+  },
+  {
+    title: "Eras Tour Acoustic Set",
+    description:
+      "An application that displays every song Taylor has performed on the Acoustic Set on Eras Tour as a sortable table.",
+    sourceCode: "https://github.com/hiralinda/eras-tour-acoustic-set",
+    liveSite: "https://eras-tour-acoustic-set.vercel.app/",
+    course: "Personal Project",
+    comments:
+      "I created this project after losing track of all the surprise songs that has being performed on the Acoustic Set on Eras Tour.",
+    image: "../img/img6.png",
+    tags: ["Next.js", "Tailwind CSS", "TypeScript", "Vercel"],
   },
 ];
 
@@ -81,11 +86,15 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:underline">
-                Live Website
+                {project.liveSite.includes("youtu")
+                  ? "Video Demo"
+                  : "Live Website"}
               </a>
               <p className="text-sm text-gray-400 mt-2">
-                Course: {project.course}
+                {project.course !== "Personal Project" && "Course: "}
+                {project.course}
               </p>
+
               <p className="text-sm text-gray-300 mt-2">{project.comments}</p>
               <div className="flex flex-wrap gap-2 mt-4">
                 {project.tags.map((tag, idx) => (

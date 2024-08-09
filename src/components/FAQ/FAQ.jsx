@@ -9,12 +9,11 @@ const faqs = [
   {
     question: "What is your favorite book?",
     answer:
-      "I will tell recruters that it is Clean Code by Robert C. Martin but it is actually Harry Potter and the Deathly Hallows by J.K. Rowling.",
+      "I will tell recruiters that is Clean Code by Robert C. Martin but it is actually Harry Potter and the Deathly Hallows by J.K. Rowling.",
   },
   {
     question: "How long does it take you to solve the 3x3 Rubik's Cube?",
-    answer:
-      "I still take about 2 minutes since I use the lawer by lawer technique.",
+    answer: "I still take about 2 minutes since I use the beginner's method",
   },
   {
     question: "What is your availability for work?",
@@ -36,6 +35,10 @@ const faqs = [
         on YouTube.
       </>
     ),
+  },
+  {
+    question: "What is your favorite AI model?",
+    answer: "It was always ChatGPT until I heard about Claude.",
   },
 ];
 

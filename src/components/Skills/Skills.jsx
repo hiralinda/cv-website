@@ -17,12 +17,14 @@ import {
   SiBootstrap,
   SiTailwindcss,
   SiBlender,
+  SiSass,
 } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
     { icon: faHtml5, name: "HTML5", color: "#E34F26" },
     { icon: faCss3Alt, name: "CSS3", color: "#1572B6" },
+    { icon: SiSass, name: "SASS", color: "#CC6699" },
     { icon: faJsSquare, name: "JavaScript", color: "#F7DF1E" },
     { icon: faReact, name: "React", color: "#61DAFB" },
     { icon: SiBootstrap, name: "Bootstrap", color: "#7952B3" },
