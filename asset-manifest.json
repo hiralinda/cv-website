@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/hireligia/static/css/main.384ce04e.css",
-    "main.js": "/hireligia/static/js/main.39c96fdf.js",
+    "main.js": "/hireligia/static/js/main.edd54e1c.js",
     "static/js/453.02cdc612.chunk.js": "/hireligia/static/js/453.02cdc612.chunk.js",
     "index.html": "/hireligia/index.html",
     "main.384ce04e.css.map": "/hireligia/static/css/main.384ce04e.css.map",
-    "main.39c96fdf.js.map": "/hireligia/static/js/main.39c96fdf.js.map",
+    "main.edd54e1c.js.map": "/hireligia/static/js/main.edd54e1c.js.map",
     "453.02cdc612.chunk.js.map": "/hireligia/static/js/453.02cdc612.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.384ce04e.css",
-    "static/js/main.39c96fdf.js"
+    "static/js/main.edd54e1c.js"
   ]
 }
