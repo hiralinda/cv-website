@@ -4,7 +4,7 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import "./Three.css";
 
 const Earth = () => {
-  const earth = useGLTF("./suzanne/textrubiks.glb");
+  const earth = useGLTF("./hireligia/suzanne/textrubiks.glb");
   const meshRef = useRef();
 
   useFrame((state, delta) => {
