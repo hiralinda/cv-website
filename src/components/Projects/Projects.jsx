@@ -2,6 +2,9 @@ import React from "react";
 import "./Projects.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import img0 from "../../img/img0.png";
+import img8 from "../../img/img8.png";
+import img6 from "../../img/img6.png";
 const projects = [
   {
     title: "Personal Portifolio Website",
@@ -12,7 +15,7 @@ const projects = [
     course: "Personal Project",
     comments:
       "It was my first time digging into Blender and 3D objects displayed on webpages",
-    image: "../img/img0.png",
+    image: img0,
     tags: ["React", "Tailwind CSS", "Three.js", "Blender"],
   },
   {
@@ -25,7 +28,7 @@ const projects = [
     course: "CS50's Web Programming with Python and JavaScript Final Project",
     comments:
       "To challenge myself, I implemented Goggle Calendar API to generate Google Meets Link according to the scheduled class information on the platform.",
-    image: "../img/img8.png",
+    image: img8,
     tags: ["Google API", "Django", "Tailwind CSS", "SQLite3", "SASS"],
   },
   {
@@ -37,7 +40,7 @@ const projects = [
     course: "Personal Project",
     comments:
       "I created this project after losing track of all the surprise songs that has being performed on the Acoustic Set on Eras Tour.",
-    image: "../img/img6.png",
+    image: img6,
     tags: ["Next.js", "Tailwind CSS", "TypeScript", "Vercel"],
   },
 ];

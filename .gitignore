@@ -26,8 +26,8 @@ yarn-error.log*
 /public/suzanne
 
 # images
-/public/img
+/src/img
 
 #files 
 
-/public/files
+/public/ligiahirata_cv.pdf

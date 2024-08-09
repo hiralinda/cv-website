@@ -2,17 +2,27 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
+import img0 from "./img/img0.png";
+import img1 from "./img/img1.png";
+import img2 from "./img/img2.png";
+import img3 from "./img/img3.png";
+import img4 from "./img/img4.png";
+import img5 from "./img/img5.png";
+import img6 from "./img/img6.png";
+import img7 from "./img/img7.png";
+import img8 from "./img/img8.png";
+
 const moreProjects = [
   {
     title: "Personal Portifolio Website",
     description:
       "A space I created to show my previous projects and use it to apply for jobs.",
     sourceCode: "https://github.com/hiralinda/cv-website",
-    liveSite: "", //update
+    liveSite: "https://hiralinda.github.io/hireligia/",
     course: "Personal Project",
     comments:
       "It was my first time digging into Blender and 3D objects displayed on webpages",
-    image: "../img/img0.png",
+    image: img0,
     tags: ["React", "Tailwind CSS", "Three.js", "Blender"],
   },
   {
@@ -25,7 +35,7 @@ const moreProjects = [
     course: "CS50's Web Programming with Python and JavaScript Final Project",
     comments:
       "To challenge myself, I implemented Goggle Calendar API to generate Google Meets Link according to the scheduled class information on the platform.",
-    image: "../img/img8.png",
+    image: img8,
     tags: ["Google API", "Django", "Tailwind CSS", "SQLite3", "SASS"],
   },
   {
@@ -37,7 +47,7 @@ const moreProjects = [
     course: "Personal Project",
     comments:
       "I created this project after losing track of all the surprise songs that has being performed on the Acoustic Set on Eras Tour.",
-    image: "../img/img6.png",
+    image: img6,
     tags: ["Next.js", "Tailwind CSS", "TypeScript", "Vercel"],
   },
   {
@@ -51,7 +61,7 @@ const moreProjects = [
     course: "The Odin Project",
     comments:
       "It was a simple JavaScript implementation that I decided to complicate a bit by using The Big Bang Theory version of the game.",
-    image: "../img/img7.png",
+    image: img7,
     tags: ["JavaScript", "HTML", "CSS"],
   },
   {
@@ -63,7 +73,7 @@ const moreProjects = [
     course: "CS50 Web Programming with Python and JavaScript",
     comments:
       "In addition to the expected implementation, I also added a settings feature that allows users to customize the background color of the entire page according to their preferences.",
-    image: "../img/img2.png",
+    image: img2,
     tags: ["Django", "Bootstrap 5", "SQLite3"],
   },
   {
@@ -75,7 +85,7 @@ const moreProjects = [
     course: "CS50 Web Programming with Python and JavaScript",
     comments:
       "Since the Backend was already implemented by the course's staff, I explored the Frontend part.",
-    image: "../img/img1.png",
+    image: img1,
     tags: ["Django", "Bootstrap 5", "SQLite3"],
   },
   {
@@ -87,7 +97,7 @@ const moreProjects = [
     liveSite: "https://youtu.be/LJGeUmB_FXk",
     course: "CS50’s Introduction to Computer Science Final Project",
     comments: "This project introduced me to the Backend implementation.",
-    image: "../img/img3.png",
+    image: img3,
     tags: ["Flask", "SASS", "Dark Mode", "SQLite3"],
   },
   {
@@ -98,7 +108,7 @@ const moreProjects = [
     liveSite: "https://youtu.be/o1lEu2gQYtY",
     course: "CS50 Web Programming with Python and JavaScript",
     comments: "No comments on this project.",
-    image: "../img/img4.png",
+    image: img4,
     tags: ["Django", "Bootstrap 5", "SQLite3"],
   },
   {
@@ -108,7 +118,7 @@ const moreProjects = [
     liveSite: "https://hiralinda.github.io/bootstrap-5-homepage/",
     course: "CS50's Introduction to Computer Science Problem Set 8",
     comments: "I learned a lot about Bootstrap 5 classes and how to use it.",
-    image: "../img/img5.png",
+    image: img5,
     tags: ["Bootstrap 5", "HTML", "CSS"],
   },
 ];
