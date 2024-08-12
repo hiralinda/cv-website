@@ -144,7 +144,7 @@ const MoreProjects = () => {
           initial={{ y: -50 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-5xl font-extrabold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+          className="text-5xl font-extrabold mb-16 py-1 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
           All Projects
         </motion.h2>
         <motion.div
