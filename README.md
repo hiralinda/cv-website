@@ -1,7 +1,9 @@
-# Personal Portfolio React App
+# Hire Ligia's Personal Portfolio React App
 
-## Description
 This Personal Portfolio project is an interactive web application showcasing my skills, projects, and contact information. It demonstrates advanced React, CSS, and JavaScript skills, providing a user-friendly interface for recruiters and potential collaborators to learn more about me and my work. The portfolio also features a 3D object implementation using Blender and Three.js, adding a unique and engaging visual element.
+
+## Live Demo
+[View Live Demo](https://hiralinda.github.io/hireligia/)
 
 ## Features
 - Home section with a brief introduction and a call-to-action
@@ -80,10 +82,8 @@ The project uses Tailwind CSS for styling, providing a modern and clean design:
 - Added interactivity to the 3D object, allowing users to rotate and explore it
 - Optimized the 3D rendering for performance across different devices
 
-
 ## Credits
 This project was inspired by various online portfolios and enhanced with additional features and a modern design. 
-<!-- insert tutorial videos followed -->
-
-## Live Demo
-[View Live Demo]()
+Useful Links:
+- [Web and App icons and PNG favicons](https://cthedot.de/icongen/)
+- [Realistic Rubik's Cube Creation and Animation (Blender Tutorial)](https://www.youtube.com/watch?v=KIuH7zxHfPQ)

@@ -38,6 +38,20 @@ const Skills = () => {
     { icon: SiBlender, name: "Blender", color: "#F5792A" },
   ];
 
+  const tumblingVariants = {
+    initial: { rotate: 0 },
+    hover: {
+      rotate: [0, -15, 15, 0],
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+        times: [0, 0.33, 0.66, 1],
+        repeat: Infinity,
+        repeatDelay: 1,
+      },
+    },
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -64,8 +78,9 @@ const Skills = () => {
               whileTap={{ scale: 0.95 }}
               className="flex flex-col items-center">
               <motion.div
-                whileHover={{ rotate: 360 }}
-                transition={{ duration: 0.5 }}
+                variants={tumblingVariants}
+                initial="initial"
+                whileHover="hover"
                 className="w-24 h-24 flex items-center justify-center bg-gray-800 rounded-full shadow-lg mb-4">
                 {skill.icon && skill.icon.prefix ? (
                   <FontAwesomeIcon

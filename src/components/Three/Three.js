@@ -35,7 +35,7 @@ const EarthCanvas = () => {
       <Earth />
       <OrbitControls
         enableZoom={false}
-        enablePan={true}
+        enablePan={false}
         enableRotate={true}
         target={[0.5, 0.5, -1.5]}
         minPolarAngle={0}

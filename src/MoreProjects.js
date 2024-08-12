@@ -14,41 +14,41 @@ import img8 from "./img/img8.png";
 
 const moreProjects = [
   {
-    title: "Personal Portifolio Website",
+    title: "Personal Portfolio Website",
     description:
-      "A space I created to show my previous projects and use it to apply for jobs.",
+      "A space I created to show my skills, certificates, and projects and as a reference for job applications.",
     sourceCode: "https://github.com/hiralinda/cv-website",
     liveSite: "https://hiralinda.github.io/hireligia/",
     course: "Personal Project",
     comments:
-      "It was my first time digging into Blender and 3D objects displayed on webpages",
+      "It was my first time digging into Blender and 3D objects displayed on webpages.",
     image: img0,
-    tags: ["React", "Tailwind CSS", "Three.js", "Blender"],
+    tags: ["React", "TailwindCSS", "Three.js", "Blender"],
   },
   {
     title: "Teacher-Student Django Platform",
     description:
-      "A Web application designed to facilitate the interaction between teachers and students.",
+      "A web application designed to facilitate the interaction between teachers and students.",
     sourceCode:
       "https://github.com/hiralinda/djangoproject_schoolwebpage?tab=readme-ov-file#teacher-student-django-platform",
     liveSite: "https://youtu.be/Qk2ap_J89tg",
-    course: "CS50's Web Programming with Python and JavaScript Final Project",
+    course: "CS50's Web Programming with Python and JavaScript",
     comments:
-      "To challenge myself, I implemented Goggle Calendar API to generate Google Meets Link according to the scheduled class information on the platform.",
+      "To challenge myself, I implemented the Goggle Calendar API to generate Google Meets Links according to the scheduled class information on the platform.",
     image: img8,
-    tags: ["Google API", "Django", "Tailwind CSS", "SQLite3", "SASS"],
+    tags: ["GoogleAPI", "Django", "TailwindCSS", "SQLite3", "SASS"],
   },
   {
     title: "Eras Tour Acoustic Set",
     description:
-      "An application that displays every song Taylor Swift has performed on the Acoustic Set on Eras Tour as a sortable table.",
+      "An application that displays every song Taylor Swift has performed during the Acoustic Set on The Eras Tour as a sortable table.",
     sourceCode: "https://github.com/hiralinda/eras-tour-acoustic-set",
     liveSite: "https://eras-tour-acoustic-set.vercel.app/",
     course: "Personal Project",
     comments:
-      "I created this project after losing track of all the surprise songs that has being performed on the Acoustic Set on Eras Tour.",
+      "I created this project after losing track of all the surprise songs that has been performed on the Acoustic Set on Eras Tour.",
     image: img6,
-    tags: ["Next.js", "Tailwind CSS", "TypeScript", "Vercel"],
+    tags: ["Next.js", "TailwindCSS", "TypeScript", "Vercel"],
   },
   {
     title: "Retro Rock Paper Scissors Lizard Spock",
@@ -60,7 +60,7 @@ const moreProjects = [
       "https://hiralinda.github.io/odin-rock-paper-scissor-lizard-spock/",
     course: "The Odin Project",
     comments:
-      "It was a simple JavaScript implementation that I decided to complicate a bit by using The Big Bang Theory version of the game.",
+      "I decided to complicate the game a bit by using The Big Bang Theory version of the game.",
     image: img7,
     tags: ["JavaScript", "HTML", "CSS"],
   },
@@ -74,50 +74,50 @@ const moreProjects = [
     comments:
       "In addition to the expected implementation, I also added a settings feature that allows users to customize the background color of the entire page according to their preferences.",
     image: img2,
-    tags: ["Django", "Bootstrap 5", "SQLite3"],
+    tags: ["Django", "Bootstrap5", "SQLite3"],
   },
   {
     title: "Email Client",
     description:
-      "This project is a simple email client built using Django for the backend and JavaScript for the frontend",
+      "This project is a email client built using Django for the backend and JavaScript for the frontend.",
     sourceCode: "https://github.com/hiralinda/email-client",
     liveSite: "https://youtu.be/7ci0fyAInos",
     course: "CS50 Web Programming with Python and JavaScript",
     comments:
-      "Since the Backend was already implemented by the course's staff, I explored the Frontend part.",
+      "I got introduced to single-page application (SPA) formats and used JavaScript to implement the frontend functionality.",
     image: img1,
-    tags: ["Django", "Bootstrap 5", "SQLite3"],
+    tags: ["Django", "Bootstrap5", "SQLite3"],
   },
   {
-    title: "Photo Portifolio Webpage",
+    title: "Photo Portfolio Webpage",
     description:
       "An interface designed to showcase dynamic photography portfolios.",
     sourceCode:
       "https://github.com/hiralinda/Photo-Portfolio-CS50s-Final-Project?tab=readme-ov-file#photo-portifolio-webpage",
     liveSite: "https://youtu.be/LJGeUmB_FXk",
-    course: "CS50’s Introduction to Computer Science Final Project",
-    comments: "This project introduced me to the Backend implementation.",
+    course: "CS50’s Introduction to Computer Science",
+    comments: "This project introduced me to python backend programming.",
     image: img3,
-    tags: ["Flask", "SASS", "Dark Mode", "SQLite3"],
+    tags: ["Flask", "SASS", "DarkMode", "SQLite3"],
   },
   {
     title: "Wiki Encyclopedia",
-    description:
-      "This project is a simple Wiki Encyclopedia built using Django.",
+    description: "This project is a Wiki Encyclopedia built using Django.",
     sourceCode: "https://github.com/hiralinda/wiki-encyclopedia",
     liveSite: "https://youtu.be/o1lEu2gQYtY",
     course: "CS50 Web Programming with Python and JavaScript",
-    comments: "No comments on this project.",
+    comments:
+      "I made use of the Markdown Python Library and implemented a Dark Mode feature.",
     image: img4,
-    tags: ["Django", "Bootstrap 5", "SQLite3"],
+    tags: ["Django", "Bootstrap5", "SQLite3, DarkMode"],
   },
   {
     title: "Bootstrap 5 Personal Homepage",
     description: "This is a mock personal homepage created with Bootstrap 5",
     sourceCode: "https://github.com/hiralinda/bootstrap-5-homepage",
     liveSite: "https://hiralinda.github.io/bootstrap-5-homepage/",
-    course: "CS50's Introduction to Computer Science Problem Set 8",
-    comments: "I learned a lot about Bootstrap 5 classes and how to use it.",
+    course: "CS50's Introduction to Computer Science",
+    comments: "I learned a lot about Bootstrap 5 and how to use it.",
     image: img5,
     tags: ["Bootstrap 5", "HTML", "CSS"],
   },

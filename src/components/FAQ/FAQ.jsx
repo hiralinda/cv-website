@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const faqs = [
   {
     question: "Where are you located?",
-    answer: "I am located in Germany and would need a visa sponsorship.",
+    answer: "I am currently located in Germany.",
   },
   {
     question: "What is your favorite book?",
@@ -12,8 +12,14 @@ const faqs = [
       "I will tell recruiters that is Clean Code by Robert C. Martin but it is actually Harry Potter and the Deathly Hallows by J.K. Rowling.",
   },
   {
+    question:
+      "What have you been doing since when you graduate until you decided to become a programmer?",
+    answer:
+      "I was working with childcare, being an Au Pair in the United States and in Japan.",
+  },
+  {
     question: "How long does it take you to solve the 3x3 Rubik's Cube?",
-    answer: "I still take about 2 minutes since I use the beginner's method",
+    answer: "I still take about 2 minutes since I use the beginner's method.",
   },
   {
     question: "What is your availability for work?",

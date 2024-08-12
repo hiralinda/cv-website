@@ -15,7 +15,7 @@ const Footer = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}>
-              Ligia's Website
+              Hire Ligia
             </motion.h2>
             <motion.a
               href="https://github.com/hiralinda/cv-website"
@@ -67,7 +67,7 @@ const Footer = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}>
-          <p>&copy; {currentYear} Ligia's Website. All rights reserved.</p>
+          <p>&copy; {currentYear} Hire Ligia's Website. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>

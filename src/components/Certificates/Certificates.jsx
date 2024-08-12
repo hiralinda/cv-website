@@ -29,6 +29,14 @@ const certifications = [
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/640px-Harvard_University_coat_of_arms.svg.png",
   },
   {
+    title: "Front End Development Libraries",
+    organization: "FreeCodeCamp",
+    date: "June 2024",
+    credentials:
+      "https://www.freecodecamp.org/certification/hiralinda/front-end-development-libraries",
+    icon: "https://shayanahmedkhan.gallerycdn.vsassets.io/extensions/shayanahmedkhan/freecodecamp-color-theme/1.1.1/1691739348454/Microsoft.VisualStudio.Services.Icons.Default",
+  },
+  {
     title: "Build a website with Wordpress",
     organization: "Coursera Project Network",
     date: "June 2024",
@@ -42,10 +50,10 @@ const certifications = [
     date: "April 2024",
     credentials:
       "https://www.freecodecamp.org/certification/hiralinda/responsive-web-design",
-    icon: "https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg",
+    icon: "https://shayanahmedkhan.gallerycdn.vsassets.io/extensions/shayanahmedkhan/freecodecamp-color-theme/1.1.1/1691739348454/Microsoft.VisualStudio.Services.Icons.Default",
   },
   {
-    title: "CS50x",
+    title: "Introduction to Computer Science",
     organization: "CS50",
     date: "Apr 2024",
     credentials:
@@ -74,10 +82,29 @@ const certifications = [
     date: "Aug 2022",
     credentials:
       "https://www.freecodecamp.org/certification/hiralinda/scientific-computing-with-python-v7",
-    icon: "https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg",
+    icon: "https://shayanahmedkhan.gallerycdn.vsassets.io/extensions/shayanahmedkhan/freecodecamp-color-theme/1.1.1/1691739348454/Microsoft.VisualStudio.Services.Icons.Default",
+  },
+  {
+    title: "Biochemical Engineering Degree",
+    organization: "Federal University of Rio Grande - Brazil",
+    date: "2015 - 2020",
+    transcript: `${process.env.PUBLIC_URL}/transcript.pdf`,
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Logo_FURG_institucional.png/800px-Logo_FURG_institucional.png",
   },
 ];
-
+const tumblingVariants = {
+  initial: { rotate: 0 },
+  hover: {
+    rotate: [0, -15, 15, 0],
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+      times: [0, 0.33, 0.66, 1],
+      repeat: Infinity,
+      repeatDelay: 1,
+    },
+  },
+};
 const Certificates = () => {
   return (
     <motion.div
@@ -109,8 +136,9 @@ const Certificates = () => {
               className="flex flex-col items-center bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg p-6 rounded-2xl shadow-xl border border-gray-700 overflow-hidden relative group text-center h-full">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-600 opacity-0 group-hover:opacity-20 transition-opacity duration-300 z-0"></div>
               <motion.div
-                whileHover={{ rotate: 360 }}
-                transition={{ duration: 0.5 }}
+                variants={tumblingVariants}
+                initial="initial"
+                whileHover="hover"
                 className="mb-4 p-3 bg-gray-700 rounded-full w-20 h-20 flex items-center justify-center z-10">
                 {typeof cert.icon === "string" ? (
                   <img
@@ -135,14 +163,25 @@ const Certificates = () => {
                 {cert.date}
               </p>
               <div className="flex-grow"></div>
-              <a
-                href={cert.credentials}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-300 mb-2 z-10">
-                <FontAwesomeIcon icon={faLink} className="mr-1" />
-                View Credentials
-              </a>
+              {cert.credentials ? (
+                <a
+                  href={cert.credentials}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-300 mb-2 z-10">
+                  <FontAwesomeIcon icon={faLink} className="mr-1" />
+                  View Credentials
+                </a>
+              ) : cert.transcript ? (
+                <a
+                  href={cert.transcript}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-300 mb-2 z-10">
+                  <FontAwesomeIcon icon={faLink} className="mr-1" />
+                  View transcript of records (pt)
+                </a>
+              ) : null}
             </motion.div>
           ))}
         </motion.div>

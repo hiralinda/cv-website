@@ -7,41 +7,41 @@ import img8 from "../../img/img8.png";
 import img6 from "../../img/img6.png";
 const projects = [
   {
-    title: "Personal Portifolio Website",
+    title: "Personal Portfolio Website",
     description:
-      "A space I created to show my previous projects and use it to apply for jobs.",
+      "A space I created to show my skills, certificates, and projects and as a reference for job applications.",
     sourceCode: "https://github.com/hiralinda/cv-website",
-    liveSite: "", //update
+    liveSite: "https://hiralinda.github.io/hireligia/",
     course: "Personal Project",
     comments:
-      "It was my first time digging into Blender and 3D objects displayed on webpages",
+      "It was my first time digging into Blender and 3D objects displayed on webpages.",
     image: img0,
-    tags: ["React", "Tailwind CSS", "Three.js", "Blender"],
+    tags: ["React", "TailwindCSS", "Three.js", "Blender"],
   },
   {
     title: "Teacher-Student Django Platform",
     description:
-      "A Web application designed to facilitate the interaction between teachers and students.",
+      "A web application designed to facilitate the interaction between teachers and students.",
     sourceCode:
       "https://github.com/hiralinda/djangoproject_schoolwebpage?tab=readme-ov-file#teacher-student-django-platform",
     liveSite: "https://youtu.be/Qk2ap_J89tg",
-    course: "CS50's Web Programming with Python and JavaScript Final Project",
+    course: "CS50's Web Programming with Python and JavaScript",
     comments:
-      "To challenge myself, I implemented Goggle Calendar API to generate Google Meets Link according to the scheduled class information on the platform.",
+      "To challenge myself, I implemented the Goggle Calendar API to generate Google Meets Links according to the scheduled class information on the platform.",
     image: img8,
-    tags: ["Google API", "Django", "Tailwind CSS", "SQLite3", "SASS"],
+    tags: ["GoogleAPI", "Django", "TailwindCSS", "SQLite3", "SASS"],
   },
   {
     title: "Eras Tour Acoustic Set",
     description:
-      "An application that displays every song Taylor Swift has performed on the Acoustic Set on Eras Tour as a sortable table.",
+      "An application that displays every song Taylor Swift has performed during the Acoustic Set on The Eras Tour as a sortable table.",
     sourceCode: "https://github.com/hiralinda/eras-tour-acoustic-set",
     liveSite: "https://eras-tour-acoustic-set.vercel.app/",
     course: "Personal Project",
     comments:
-      "I created this project after losing track of all the surprise songs that has being performed on the Acoustic Set on Eras Tour.",
+      "I created this project after losing track of all the surprise songs that has been performed on the Acoustic Set on Eras Tour.",
     image: img6,
-    tags: ["Next.js", "Tailwind CSS", "TypeScript", "Vercel"],
+    tags: ["Next.js", "TailwindCSS", "TypeScript", "Vercel"],
   },
 ];
 
@@ -57,7 +57,7 @@ const Projects = () => {
           initial={{ y: -50 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-5xl font-extrabold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+          className="text-5xl font-extrabold py-1 mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
           My Projects
         </motion.h2>
         <motion.div
