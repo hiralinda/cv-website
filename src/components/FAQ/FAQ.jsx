@@ -3,10 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
-    question: "Where are you located?",
-    answer: "I am currently located in Germany.",
-  },
-  {
     question: "What is your favorite book?",
     answer:
       "I will tell recruiters that is Clean Code by Robert C. Martin but it is actually Harry Potter and the Deathly Hallows by J.K. Rowling.",
@@ -27,7 +23,7 @@ const faqs = [
   },
   {
     question:
-      "Did you really make the Rubik's Cube that is displayed on the Hero section?",
+      "Did you really make the Rubik's Cube that is displayed (larger screens only) on the Hero section?",
     answer: (
       <>
         Yes, I did using Blender Software and following{" "}
