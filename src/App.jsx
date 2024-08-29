@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import Experience from "./components/Experience/Experience";
 import Skills from "./components/Skills/Skills";
 import Certificates from "./components/Certificates/Certificates";
 import Projects from "./components/Projects/Projects";
@@ -20,6 +21,9 @@ function App() {
           element={
             <>
               <Hero />
+              <section id="experience">
+                <Experience />
+              </section>
               <section id="skills">
                 <Skills />
               </section>
