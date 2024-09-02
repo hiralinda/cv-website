@@ -12,13 +12,25 @@ import {
 const Hero = () => {
   return (
     <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
           className="py-32 md:py-32 flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+            {/* Image div */}
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="flex justify-center md:justify-start mb-8">
+              <img
+                src={`${process.env.PUBLIC_URL}/me.png`}
+                alt="Ligia Hirata"
+                className="w-64 h-64 rounded-full object-cover p-1 bg-gradient-to-r from-blue-400 to-purple-600 shadow-lg"
+              />
+            </motion.div>
             <motion.h1
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
