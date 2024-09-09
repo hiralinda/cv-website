@@ -10,7 +10,7 @@ const projects = [
     title: "Personal Portfolio Website",
     description:
       "A space I created to show my skills, certificates, and projects and as a reference for job applications.",
-    sourceCode: "https://github.com/hiralinda/cv-website",
+    sourceCode: "https://github.com/hiralinda/hireligia",
     liveSite: "https://hiralinda.github.io/hireligia/",
     course: "Personal Project",
     comments:

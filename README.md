@@ -29,7 +29,7 @@ This Personal Portfolio project is an interactive web application showcasing my 
 ## Project Structure
 
 ```
-cv-website/
+hireligia/
 │
 ├── public/
 │   ├── index.html

@@ -19,7 +19,7 @@ const Footer = () => {
             </motion.h2>
 
             <motion.a
-              href="https://github.com/hiralinda/cv-website"
+              href="https://github.com/hiralinda/hireligia"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white transition duration-300"
