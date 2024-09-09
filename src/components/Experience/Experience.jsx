@@ -8,7 +8,6 @@ import {
   faAtom,
   faMicroscope,
 } from "@fortawesome/free-solid-svg-icons";
-import { SiNano } from "react-icons/si";
 
 const experiences = [
   {
