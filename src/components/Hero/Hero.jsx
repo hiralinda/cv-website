@@ -46,9 +46,9 @@ const Hero = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
               className="text-lg md:text-xl mb-6">
-              Biochemical Engineering graduate turned Web Developer. Combining
-              analytical skills with coding expertise to create robust,
-              user-friendly applications.
+              Junior Software Developer with 1 year of experience, adept at
+              delivering high-quality solutions and committed to innovation and
+              effective collaboration.
             </motion.p>
             <motion.div
               initial={{ y: -20, opacity: 0 }}

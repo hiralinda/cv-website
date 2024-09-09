@@ -3,11 +3,23 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBriefcase,
-  faGraduationCap,
-  faProjectDiagram,
+  faLaptopCode,
+  faFlask,
+  faAtom,
+  faMicroscope,
 } from "@fortawesome/free-solid-svg-icons";
+import { SiNano } from "react-icons/si";
 
 const experiences = [
+  {
+    icon: faLaptopCode,
+    title: "Freelance Web Developer",
+    company: "Self-Employed",
+    period: "Aug 2023 - Present",
+    description:
+      "Providing web development services to clients globally, specializing in React and TypeScript. Responsible for design, development, and deployment of custom websites and applications.",
+    color: "#61DAFB",
+  },
   {
     icon: faBriefcase,
     title: "Junior Software Developer",
@@ -17,7 +29,33 @@ const experiences = [
       "Assisted with a project for a non-profit organization helping with the design and implementation of the web UI using Bootstrap, and integrating the back-end with C# and Microsoft Azure services.",
     color: "#61DAFB",
   },
-  // Add more experiences here if needed
+  {
+    icon: faFlask,
+    title: "Laboratory Assistant",
+    company: "BioCen Do Brasil",
+    period: "July 2020 - October 2020",
+    description:
+      "Conducted physical, chemical and microbiological testing and quality control procedures; Collaborated with cross-functional teams to troubleshoot technical issues; Leveraged analytical thinking and attention to detail for process improvement.",
+    color: "#4CAF50",
+  },
+  {
+    icon: faMicroscope,
+    title: "Laboratory Researcher",
+    company: "LEB (Federal University of Rio Grande - Brazil)",
+    period: "January 2019 - December 2019",
+    description:
+      "Developed a new nanoemulsion from algae’s biomolecules; Performed physical, chemical and microbiological analyses; Analyzed the nanotechnology potential of the nanoencapsulation.",
+    color: "#4CAF50",
+  },
+  {
+    icon: faAtom,
+    title: "Laboratory Researcher",
+    company: "LAFQAT (Federal University of Rio Grande - Brazil)",
+    period: "January 2017 - August 2017",
+    description:
+      "Conducted the synthesis of a new chemical molecule; Performed computational analyses through ArgusLab program; Analyzed the molecular interaction between enzyme and molecule through computational algorithms.",
+    color: "#4CAF50",
+  },
 ];
 
 const tumblingVariants = {

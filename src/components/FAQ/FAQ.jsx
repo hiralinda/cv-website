@@ -3,23 +3,24 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
-    question: "What is your favorite book?",
+    question: "What are your hobbies and interests outside of work?",
     answer:
-      "I will tell recruiters that is Clean Code by Robert C. Martin but it is actually Harry Potter and the Deathly Hallows by J.K. Rowling.",
+      "I like reading books and challenge myself to read more books each year than the last. Photography is another hobby I enjoy, particularly taking portraits. I also value spending quality time with friends and family and make it a point to travel whenever possible.",
   },
   {
-    question:
-      "What have you been doing since when you graduate until you decided to become a programmer?",
+    question: "What’s your favorite book?",
     answer:
-      "I was working with childcare, being an Au Pair in the United States and in Japan.",
+      "It is hard to pick a favorite. I would say the Harry Potter series for fictional and The Wild Truth by Carine McCandless for non-fictional.",
   },
   {
-    question: "How long does it take you to solve the 3x3 Rubik's Cube?",
-    answer: "I still take about 2 minutes since I use the beginner's method.",
+    question: "What’s the most interesting place you’ve traveled to?",
+    answer:
+      "My favorite destination so far has been the Amazon Rainforest in Brazil. I visited in 2023 and gained a deep appreciation for the world's largest forest, as well as a richer understanding of my own brazilian culture.",
   },
   {
-    question: "What is your availability for work?",
-    answer: "I am available for full-time positions starting immediately.",
+    question: "Do you have any unique skills or talents?",
+    answer:
+      "I can solve the Rubik's Cube and have even taught kids how to do it. I believe that with dedication and practice, anyone can master it.",
   },
   {
     question:
